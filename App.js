@@ -16,7 +16,7 @@ if(!fs.existsSync(NewFolder)) {
     fs.mkdirSync(NewFolder);
 }
 
-NewServer.get("/CreateFile", ((response, request) => {
+NewServer.get("/", ((response, request) => {
     const Data   = new Date();
     const Year   = Data.getFullYear().toString();
     const Month  = (Data.getMonth() + 1).toString();
